@@ -42,3 +42,54 @@
   transition: all 0.6s ease-in-out;
   background-color: rgb(255, 32, 102);
 }
+.DIO{
+  width: 200px;
+  height: 400px;
+  background-color: aquamarine;
+  margin-left:30px;
+  margin-top: 20px;
+}
+.name1{
+  display: block;
+  padding-top: 35px;
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+.container:hover+.DIO .name1{
+  animation: dio 1s;
+  transition: 1s;
+}
+@keyframes dio{
+  from{
+    transform: translate(70px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+.name2{
+  display: block;
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+.container:hover+.DIO .name2{
+  animation: dio 2s;
+  transition: 3s;
+}
+.name3{
+  display: block;
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+.container:hover+.DIO .name3{
+  animation: dio 2.5s;
+  transition: 6s;
+}
+
+.container:hover + .giorno{
+  width: 300px;
+  height: 300px;
+  background-image: url(./maxresdefault.jpeg);
+}
