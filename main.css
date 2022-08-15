@@ -13,6 +13,7 @@ body {
   gap: 120px;
   justify-content: center;
   padding: 50px;
+  position: absolute;
 }
 div.main2 a {
   color: black;
@@ -43,6 +44,103 @@ div.main2 a:after {
 div.main2 a:hover:before,
 div.main2 a:hover:after {
   opacity: 0.1;
-  height: 50%;
+  height: 25%;
   width: 100%;
 }
+.burger{
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  background-color: rgb(69, 69, 69);
+  border-color: rgb(147, 147, 147);
+  cursor: pointer;
+  position: absolute  ;
+}
+.burg{
+  padding-left: 8px;
+  padding-top:13px; 
+}
+.top{
+  width: 35px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.middle{
+  width: 35px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.bottom{
+  width: 35px;
+  height: 4px;
+  margin-bottom: 6px;
+  background-color: white;
+}
+.burger:hover .top{
+  transition: all 1.1s ease-in-out ;
+  transform: translateY(10px);
+  background-color: rgb(255, 32, 102);
+}
+.burger:hover .bottom{
+  transition: all 1.1s ease-in-out ;
+  transform: translateY(-10px);
+  background-color: rgb(255, 32, 102);
+}
+.burger:hover .middle{
+  transition: all 0.6s ease-in-out;
+  background-color: rgb(255, 32, 102);
+}
+.text{
+  margin:0;
+  width:25vw;
+  height:100vh;
+  background-color:rgb(252, 231, 3);
+  position: static;
+  display:flex;
+  justify-content:center ;
+  cursor:pointer;
+}
+.text1{
+position: absolute;
+display:flex;
+justify-content:center;
+flex-direction:column ;
+align-content:center;
+column-gap:100px;
+top:200px;
+flex-wrap: nowrap;
+right:1300px;
+}
+.text2{
+  position: absolute;
+  display:flex;
+  justify-content:center;
+  flex-direction:column ;
+  align-content:center;
+  column-gap:100px;
+  top:400px;
+  flex-wrap: nowrap;
+  right:1300px;
+  }
+  .text3{
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    flex-direction:column ;
+    align-content:center;
+    column-gap:100px;
+    top:600px;
+    flex-wrap: nowrap;
+    right:1300px;
+    }
+    .text:hover:before{
+      opacity:0;
+      right:1150px;
+    }
+    .text:hover:after{
+      opacity:1;
+      right:1300px;
+      transition-duration:3s ;
+    }
